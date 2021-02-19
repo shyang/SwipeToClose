@@ -6,9 +6,12 @@
 //
 
 #import "ViewController.h"
+#import "NewViewController.h"
+#import "SimpleSwipeTransition.h"
 
 @interface ViewController ()
 
+@property (nonatomic) SimpleSwipeTransition *transition;
 @end
 
 @implementation ViewController
@@ -21,7 +24,12 @@
 }
 
 - (void)onRight {
-
+    UIViewController *next = [[UINavigationController alloc] initWithRootViewController:[NewViewController new]];
+    next.modalPresentationStyle = UIModalPresentationCustom;
+    self.transition = [SimpleSwipeTransition new];
+    next.transitioningDelegate = self.transition;
+    [self.transition.swipeInteractionController wireToViewController:next];
+    [self presentViewController:next animated:YES completion:nil];
 }
 
 @end

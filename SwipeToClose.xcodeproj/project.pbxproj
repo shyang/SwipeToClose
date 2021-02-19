@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADB8481B25E01E7C00E098D4 /* SimpleDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */; };
 		ADD47DF725DFDE3400B27577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47DF625DFDE3400B27577 /* AppDelegate.m */; };
 		ADD47DFD25DFDE3400B27577 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47DFC25DFDE3400B27577 /* ViewController.m */; };
 		ADD47E0225DFDE3500B27577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD47E0125DFDE3500B27577 /* Assets.xcassets */; };
 		ADD47E0525DFDE3500B27577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD47E0325DFDE3500B27577 /* LaunchScreen.storyboard */; };
 		ADD47E0825DFDE3500B27577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E0725DFDE3500B27577 /* main.m */; };
+		ADD47E1525DFDF8400B27577 /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */; };
+		ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */; };
+		ADD47E2925DFE13400B27577 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E2825DFE13400B27577 /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADB8481925E01E7C00E098D4 /* SimpleDismissAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDismissAnimator.h; sourceTree = "<group>"; };
+		ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleDismissAnimator.m; sourceTree = "<group>"; };
 		ADD47DF225DFDE3400B27577 /* SwipeToClose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeToClose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD47DF525DFDE3400B27577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADD47DF625DFDE3400B27577 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		ADD47E0425DFDE3500B27577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD47E0625DFDE3500B27577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD47E0725DFDE3500B27577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADD47E1325DFDF8400B27577 /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
+		ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
+		ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSwipeTransition.m; sourceTree = "<group>"; };
+		ADD47E1C25DFDFA700B27577 /* SimpleSwipeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwipeTransition.h; sourceTree = "<group>"; };
+		ADD47E2725DFE13400B27577 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		ADD47E2825DFE13400B27577 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +70,20 @@
 			children = (
 				ADD47DF525DFDE3400B27577 /* AppDelegate.h */,
 				ADD47DF625DFDE3400B27577 /* AppDelegate.m */,
+				ADD47E0125DFDE3500B27577 /* Assets.xcassets */,
+				ADD47E1C25DFDFA700B27577 /* SimpleSwipeTransition.h */,
+				ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */,
+				ADD47E0625DFDE3500B27577 /* Info.plist */,
+				ADD47E0325DFDE3500B27577 /* LaunchScreen.storyboard */,
+				ADD47E0725DFDE3500B27577 /* main.m */,
+				ADD47E2725DFE13400B27577 /* NewViewController.h */,
+				ADD47E2825DFE13400B27577 /* NewViewController.m */,
+				ADB8481925E01E7C00E098D4 /* SimpleDismissAnimator.h */,
+				ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */,
+				ADD47E1325DFDF8400B27577 /* SwipeInteractionController.h */,
+				ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */,
 				ADD47DFB25DFDE3400B27577 /* ViewController.h */,
 				ADD47DFC25DFDE3400B27577 /* ViewController.m */,
-				ADD47E0125DFDE3500B27577 /* Assets.xcassets */,
-				ADD47E0325DFDE3500B27577 /* LaunchScreen.storyboard */,
-				ADD47E0625DFDE3500B27577 /* Info.plist */,
-				ADD47E0725DFDE3500B27577 /* main.m */,
 			);
 			path = SwipeToClose;
 			sourceTree = "<group>";
@@ -138,7 +158,11 @@
 			files = (
 				ADD47DFD25DFDE3400B27577 /* ViewController.m in Sources */,
 				ADD47DF725DFDE3400B27577 /* AppDelegate.m in Sources */,
+				ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */,
 				ADD47E0825DFDE3500B27577 /* main.m in Sources */,
+				ADD47E2925DFE13400B27577 /* NewViewController.m in Sources */,
+				ADB8481B25E01E7C00E098D4 /* SimpleDismissAnimator.m in Sources */,
+				ADD47E1525DFDF8400B27577 /* SwipeInteractionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,8 +297,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y28X3YR8R9;
 				INFOPLIST_FILE = SwipeToClose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,8 +317,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y28X3YR8R9;
 				INFOPLIST_FILE = SwipeToClose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
