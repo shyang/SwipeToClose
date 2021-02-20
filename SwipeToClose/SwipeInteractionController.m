@@ -18,12 +18,18 @@
 - (void)handlePan:(UIPanGestureRecognizer *)gestureRecognizer {
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view.superview];
     CGFloat progress = translation.y / gestureRecognizer.view.superview.frame.size.height;
-
-    progress = MIN(1.0, (MAX(0.0, progress)));
+    if (!self.interactionInProgress) {
+        if (translation.y < 60 || fabs(translation.x) > translation.y) {
+            return;
+        }
+        self.interactionInProgress = YES;
+        [self.viewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    CGFloat v = [gestureRecognizer velocityInView:gestureRecognizer.view].y;
+    NSLog(@"%.2f %.0f %.0f", progress, v, translation.y);
+    self.completionSpeed = 1;
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:
-            self.interactionInProgress = YES;
-            [self.viewController dismissViewControllerAnimated:YES completion:nil];
             break;
         case UIGestureRecognizerStateChanged:
             self.shouldCompleteTransition = progress > 0.5;
@@ -35,14 +41,12 @@
             break;
         case UIGestureRecognizerStateEnded:
             self.interactionInProgress = NO;
-            if ([gestureRecognizer velocityInView:gestureRecognizer.view].y > 500) {
+            if (self.shouldCompleteTransition || (progress > 0.15 && [gestureRecognizer velocityInView:gestureRecognizer.view].y > 500)) {
+                self.completionSpeed = sqrt(progress);
                 [self finishInteractiveTransition];
             } else {
-                if (!self.shouldCompleteTransition) {
-                    [self cancelInteractiveTransition];
-                } else {
-                    [self finishInteractiveTransition];
-                }
+                self.completionSpeed = progress; // 进度越小，速度越慢
+                [self cancelInteractiveTransition];
             }
             break;
         default:

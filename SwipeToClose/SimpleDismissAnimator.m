@@ -10,7 +10,7 @@
 @implementation SimpleDismissAnimator
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.15;
+    return 0.2;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -21,7 +21,6 @@
     [UIView animateWithDuration:duration animations:^{
         fromVC.view.transform = CGAffineTransformMakeTranslation(0, containerView.bounds.size.height);
     } completion:^(BOOL finished) {
-        fromVC.view.transform = CGAffineTransformIdentity;
         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
     }];
 }

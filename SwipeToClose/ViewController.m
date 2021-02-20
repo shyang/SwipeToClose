@@ -20,7 +20,8 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor blueColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Present" style:UIBarButtonItemStylePlain target:self action:@selector(onRight)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"定制版" style:UIBarButtonItemStylePlain target:self action:@selector(onRight)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"系统内置" style:UIBarButtonItemStylePlain target:self action:@selector(onLeft)];
 }
 
 - (void)onRight {
@@ -29,6 +30,11 @@
     self.transition = [SimpleSwipeTransition new];
     next.transitioningDelegate = self.transition;
     [self.transition.swipeInteractionController wireToViewController:next];
+    [self presentViewController:next animated:YES completion:nil];
+}
+
+- (void)onLeft {
+    UIViewController *next = [[UINavigationController alloc] initWithRootViewController:[NewViewController new]];
     [self presentViewController:next animated:YES completion:nil];
 }
 
