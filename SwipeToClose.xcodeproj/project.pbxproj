@@ -16,6 +16,7 @@
 		ADD47E1525DFDF8400B27577 /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */; };
 		ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */; };
 		ADD47E2925DFE13400B27577 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E2825DFE13400B27577 /* NewViewController.m */; };
+		ADDAF79125E8B47A00B27577 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF79025E8B47A00B27577 /* ProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		ADD47E1C25DFDFA700B27577 /* SimpleSwipeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwipeTransition.h; sourceTree = "<group>"; };
 		ADD47E2725DFE13400B27577 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		ADD47E2825DFE13400B27577 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		ADDAF78F25E8B47A00B27577 /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		ADDAF79025E8B47A00B27577 /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */,
 				ADD47DFB25DFDE3400B27577 /* ViewController.h */,
 				ADD47DFC25DFDE3400B27577 /* ViewController.m */,
+				ADDAF78F25E8B47A00B27577 /* ProgressView.h */,
+				ADDAF79025E8B47A00B27577 /* ProgressView.m */,
 			);
 			path = SwipeToClose;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD47DFD25DFDE3400B27577 /* ViewController.m in Sources */,
+				ADDAF79125E8B47A00B27577 /* ProgressView.m in Sources */,
 				ADD47DF725DFDE3400B27577 /* AppDelegate.m in Sources */,
 				ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */,
 				ADD47E0825DFDE3500B27577 /* main.m in Sources */,
