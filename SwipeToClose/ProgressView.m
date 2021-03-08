@@ -35,6 +35,7 @@ static const CGFloat D = 44; // diameter
 }
 
 - (void)setProgress:(CGFloat)progress {
+    progress = MAX(0, MIN(1, progress));
     CAShapeLayer *layer = (CAShapeLayer *)self.layer;
     if (progress < 1){
         layer.strokeEnd = progress;

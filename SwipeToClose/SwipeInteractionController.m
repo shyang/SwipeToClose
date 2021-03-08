@@ -15,6 +15,10 @@
 @property (nonatomic) UIImpactFeedbackGenerator *feedbackGenerator;
 @end
 
+static const CGFloat threshold = 20;
+static const CGFloat progressTop = 44;
+static const CGFloat progressBottom = 120;
+
 @implementation SwipeInteractionController
 
 - (ProgressView *)progressView {
@@ -37,7 +41,7 @@
     containerView.backgroundColor = [UIColor blackColor];
 
     [containerView insertSubview:self.progressView atIndex:0];
-    self.progressView.center = CGPointMake(containerView.bounds.size.width / 2, 60);
+    self.progressView.center = CGPointMake(containerView.bounds.size.width / 2, progressTop + 44 / 2);
     __weak typeof(self) weakSelf = self;
     self.done = ^{
         typeof(self) self = weakSelf;
@@ -50,22 +54,23 @@
 
 - (void)handlePan:(UIPanGestureRecognizer *)gestureRecognizer {
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view.superview];
-    CGFloat progress = translation.y / gestureRecognizer.view.superview.frame.size.height;
-    progress = MIN(1, MAX(progress, 0));
+    CGFloat dy = translation.y;
     if (!self.interactionInProgress) {
-        if (progress < 0.05 || fabs(translation.x) > translation.y) {
+        if (dy < threshold || fabs(translation.x) > dy) {
             return;
         }
         self.interactionInProgress = YES;
         [self.viewController dismissViewControllerAnimated:YES completion:nil];
         self.feedbackGenerator = [[UIImpactFeedbackGenerator alloc] init];
     }
-    // 位移: [0.05, 1] 映射到 [0, 0.5]
-    progress = (progress - 0.05) / 0.95 * 0.5;
 
-    // 进度: [0.18 0.28] 映射到 [0, 1]
-    CGFloat hint = (progress - 0.18) / 0.10;
+    CGFloat actualY = gestureRecognizer.view.layer.presentationLayer.frame.origin.y;
+    CGFloat hint = (actualY - progressTop - 4) / (progressBottom - progressTop);
     [self.progressView setProgress:hint];
+
+    CGFloat progress = (dy - threshold) / gestureRecognizer.view.superview.frame.size.height;
+    progress = sqrtf(MIN(1, MAX(progress, 0))) / 2;
+
     self.completionSpeed = 1;
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:
