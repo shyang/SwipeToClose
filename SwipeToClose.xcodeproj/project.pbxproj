@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADB8481B25E01E7C00E098D4 /* SimpleDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */; };
+		ADB8481B25E01E7C00E098D4 /* SwipeToCloseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB8481A25E01E7C00E098D4 /* SwipeToCloseAnimator.m */; };
 		ADD47DF725DFDE3400B27577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47DF625DFDE3400B27577 /* AppDelegate.m */; };
 		ADD47DFD25DFDE3400B27577 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47DFC25DFDE3400B27577 /* ViewController.m */; };
 		ADD47E0225DFDE3500B27577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD47E0125DFDE3500B27577 /* Assets.xcassets */; };
 		ADD47E0525DFDE3500B27577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD47E0325DFDE3500B27577 /* LaunchScreen.storyboard */; };
 		ADD47E0825DFDE3500B27577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E0725DFDE3500B27577 /* main.m */; };
-		ADD47E1525DFDF8400B27577 /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */; };
-		ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */; };
+		ADD47E1525DFDF8400B27577 /* SwipeToCloseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1425DFDF8400B27577 /* SwipeToCloseController.m */; };
+		ADD47E1D25DFDFA700B27577 /* SwipeToCloseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E1B25DFDFA700B27577 /* SwipeToCloseTransition.m */; };
 		ADD47E2925DFE13400B27577 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD47E2825DFE13400B27577 /* NewViewController.m */; };
-		ADDAF79125E8B47A00B27577 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF79025E8B47A00B27577 /* ProgressView.m */; };
+		ADDAF79125E8B47A00B27577 /* SwipeToCloseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF79025E8B47A00B27577 /* SwipeToCloseProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADB8481925E01E7C00E098D4 /* SimpleDismissAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleDismissAnimator.h; sourceTree = "<group>"; };
-		ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleDismissAnimator.m; sourceTree = "<group>"; };
+		ADB8481925E01E7C00E098D4 /* SwipeToCloseAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeToCloseAnimator.h; sourceTree = "<group>"; };
+		ADB8481A25E01E7C00E098D4 /* SwipeToCloseAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeToCloseAnimator.m; sourceTree = "<group>"; };
 		ADD47DF225DFDE3400B27577 /* SwipeToClose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeToClose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD47DF525DFDE3400B27577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADD47DF625DFDE3400B27577 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,14 +31,14 @@
 		ADD47E0425DFDE3500B27577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD47E0625DFDE3500B27577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD47E0725DFDE3500B27577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ADD47E1325DFDF8400B27577 /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
-		ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
-		ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSwipeTransition.m; sourceTree = "<group>"; };
-		ADD47E1C25DFDFA700B27577 /* SimpleSwipeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwipeTransition.h; sourceTree = "<group>"; };
+		ADD47E1325DFDF8400B27577 /* SwipeToCloseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToCloseController.h; sourceTree = "<group>"; };
+		ADD47E1425DFDF8400B27577 /* SwipeToCloseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToCloseController.m; sourceTree = "<group>"; };
+		ADD47E1B25DFDFA700B27577 /* SwipeToCloseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToCloseTransition.m; sourceTree = "<group>"; };
+		ADD47E1C25DFDFA700B27577 /* SwipeToCloseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToCloseTransition.h; sourceTree = "<group>"; };
 		ADD47E2725DFE13400B27577 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		ADD47E2825DFE13400B27577 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
-		ADDAF78F25E8B47A00B27577 /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
-		ADDAF79025E8B47A00B27577 /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		ADDAF78F25E8B47A00B27577 /* SwipeToCloseProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeToCloseProgressView.h; sourceTree = "<group>"; };
+		ADDAF79025E8B47A00B27577 /* SwipeToCloseProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeToCloseProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,21 +74,21 @@
 				ADD47DF525DFDE3400B27577 /* AppDelegate.h */,
 				ADD47DF625DFDE3400B27577 /* AppDelegate.m */,
 				ADD47E0125DFDE3500B27577 /* Assets.xcassets */,
-				ADD47E1C25DFDFA700B27577 /* SimpleSwipeTransition.h */,
-				ADD47E1B25DFDFA700B27577 /* SimpleSwipeTransition.m */,
 				ADD47E0625DFDE3500B27577 /* Info.plist */,
 				ADD47E0325DFDE3500B27577 /* LaunchScreen.storyboard */,
 				ADD47E0725DFDE3500B27577 /* main.m */,
 				ADD47E2725DFE13400B27577 /* NewViewController.h */,
 				ADD47E2825DFE13400B27577 /* NewViewController.m */,
-				ADB8481925E01E7C00E098D4 /* SimpleDismissAnimator.h */,
-				ADB8481A25E01E7C00E098D4 /* SimpleDismissAnimator.m */,
-				ADD47E1325DFDF8400B27577 /* SwipeInteractionController.h */,
-				ADD47E1425DFDF8400B27577 /* SwipeInteractionController.m */,
+				ADB8481925E01E7C00E098D4 /* SwipeToCloseAnimator.h */,
+				ADB8481A25E01E7C00E098D4 /* SwipeToCloseAnimator.m */,
+				ADD47E1325DFDF8400B27577 /* SwipeToCloseController.h */,
+				ADD47E1425DFDF8400B27577 /* SwipeToCloseController.m */,
+				ADDAF78F25E8B47A00B27577 /* SwipeToCloseProgressView.h */,
+				ADDAF79025E8B47A00B27577 /* SwipeToCloseProgressView.m */,
+				ADD47E1C25DFDFA700B27577 /* SwipeToCloseTransition.h */,
+				ADD47E1B25DFDFA700B27577 /* SwipeToCloseTransition.m */,
 				ADD47DFB25DFDE3400B27577 /* ViewController.h */,
 				ADD47DFC25DFDE3400B27577 /* ViewController.m */,
-				ADDAF78F25E8B47A00B27577 /* ProgressView.h */,
-				ADDAF79025E8B47A00B27577 /* ProgressView.m */,
 			);
 			path = SwipeToClose;
 			sourceTree = "<group>";
@@ -162,13 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD47DFD25DFDE3400B27577 /* ViewController.m in Sources */,
-				ADDAF79125E8B47A00B27577 /* ProgressView.m in Sources */,
+				ADDAF79125E8B47A00B27577 /* SwipeToCloseProgressView.m in Sources */,
 				ADD47DF725DFDE3400B27577 /* AppDelegate.m in Sources */,
-				ADD47E1D25DFDFA700B27577 /* SimpleSwipeTransition.m in Sources */,
+				ADD47E1D25DFDFA700B27577 /* SwipeToCloseTransition.m in Sources */,
 				ADD47E0825DFDE3500B27577 /* main.m in Sources */,
 				ADD47E2925DFE13400B27577 /* NewViewController.m in Sources */,
-				ADB8481B25E01E7C00E098D4 /* SimpleDismissAnimator.m in Sources */,
-				ADD47E1525DFDF8400B27577 /* SwipeInteractionController.m in Sources */,
+				ADB8481B25E01E7C00E098D4 /* SwipeToCloseAnimator.m in Sources */,
+				ADD47E1525DFDF8400B27577 /* SwipeToCloseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

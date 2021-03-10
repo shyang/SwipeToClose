@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleDismissAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface SwipeToCloseAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end
 

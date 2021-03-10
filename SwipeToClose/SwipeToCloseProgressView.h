@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ProgressView : UIView
+@interface SwipeToCloseProgressView : UIView
 
 - (void)setProgress:(CGFloat)progress;
 

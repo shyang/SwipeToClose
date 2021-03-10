@@ -5,25 +5,25 @@
 //  Created by shaohua yang on 2/19/21.
 //
 
-#import "SwipeInteractionController.h"
-#import "ProgressView.h"
+#import "SwipeToCloseController.h"
+#import "SwipeToCloseProgressView.h"
 
-@interface SwipeInteractionController ()
+@interface SwipeToCloseController ()
 
-@property (nonatomic) ProgressView *progressView;
+@property (nonatomic) SwipeToCloseProgressView *progressView;
 @property (nonatomic) dispatch_block_t done;
 @property (nonatomic) UIImpactFeedbackGenerator *feedbackGenerator;
 @end
 
-static const CGFloat threshold = 20;
-static const CGFloat progressTop = 44;
-static const CGFloat progressBottom = 120;
+static const CGFloat threshold = 0;
+static const CGFloat progressTop = 54;
+static const CGFloat progressBottom = 136;
 
-@implementation SwipeInteractionController
+@implementation SwipeToCloseController
 
-- (ProgressView *)progressView {
+- (SwipeToCloseProgressView *)progressView {
     if (!_progressView) {
-        _progressView = [ProgressView new];
+        _progressView = [SwipeToCloseProgressView new];
     }
     return _progressView;
 }
@@ -69,7 +69,7 @@ static const CGFloat progressBottom = 120;
     [self.progressView setProgress:hint];
 
     CGFloat progress = (dy - threshold) / gestureRecognizer.view.superview.frame.size.height;
-    progress = sqrtf(MIN(1, MAX(progress, 0))) / 2;
+    progress = pow((MIN(1, MAX(progress, 0))), 0.4) / 2;
 
     self.completionSpeed = 1;
     switch (gestureRecognizer.state) {
@@ -95,7 +95,7 @@ static const CGFloat progressBottom = 120;
                 self.done();
                 [self finishInteractiveTransition];
             } else {
-                self.completionSpeed = progress; // 进度越小，速度越慢
+                self.completionSpeed = 0.08; // 进度越小，速度越慢
                 [self cancelInteractiveTransition];
             }
             break;

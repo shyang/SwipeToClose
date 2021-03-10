@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SwipeInteractionController : UIPercentDrivenInteractiveTransition
+@interface SwipeToCloseController : UIPercentDrivenInteractiveTransition
 
 @property (nonatomic, assign) BOOL interactionInProgress;
 @property (nonatomic, assign) BOOL shouldCompleteTransition;

@@ -5,9 +5,9 @@
 //  Created by shaohua on 2021/2/20.
 //
 
-#import "SimpleDismissAnimator.h"
+#import "SwipeToCloseAnimator.h"
 
-@implementation SimpleDismissAnimator
+@implementation SwipeToCloseAnimator
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.2;

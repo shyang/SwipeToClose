@@ -5,16 +5,16 @@
 //  Created by shaohua yang on 2/26/21.
 //
 
-#import "ProgressView.h"
+#import "SwipeToCloseProgressView.h"
 
 static const CGFloat D = 44; // diameter
 
-@interface ProgressView ()
+@interface SwipeToCloseProgressView ()
 
 @property (nonatomic) UIImageView *iconView;
 @end
 
-@implementation ProgressView
+@implementation SwipeToCloseProgressView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:CGRectMake(0, 0, D, D)]) {
