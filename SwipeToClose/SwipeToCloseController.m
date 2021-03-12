@@ -15,7 +15,7 @@
 @property (nonatomic) UIImpactFeedbackGenerator *feedbackGenerator;
 @end
 
-static const CGFloat threshold = 0;
+static const CGFloat threshold = 20;
 static const CGFloat progressTop = 54;
 static const CGFloat progressBottom = 136;
 
@@ -95,7 +95,7 @@ static const CGFloat progressBottom = 136;
                 self.done();
                 [self finishInteractiveTransition];
             } else {
-                self.completionSpeed = 0.08; // 进度越小，速度越慢
+                self.completionSpeed = progress; // 进度越小，速度越慢
                 [self cancelInteractiveTransition];
             }
             break;
